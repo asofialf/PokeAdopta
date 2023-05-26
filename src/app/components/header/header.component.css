@@ -1,0 +1,10 @@
+mat-toolbar{
+    color: #4A6163;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    transition: 0.2s;
+    padding: 8px 2%;
+    background-color: #F9FAF4;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
