@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-in-adoption',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./in-adoption.component.css']
 })
 export class InAdoptionComponent {
-
+  cardsData: any[] = ['position', 'image', 'name'];
 }
