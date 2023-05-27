@@ -1,0 +1,33 @@
+.not-found-info{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    margin: 6em;
+    color: #4A6163;
+}
+.not-found-info h1{
+    font-family:'Lexend';
+    font-weight: 500;
+    font-size: 4em;
+}
+.not-found-info p{
+    margin-top: 1.5em;
+    font-family: 'Lexend';
+    font-size: 1.5em;
+}
+.not-found-info button{
+    font-family: 'Lexend';
+    background: #d77b52;
+    color:white;
+    font-size: 1em;
+    margin-top: 1.5em;
+    width: 7em;
+    height: 3em;
+    border-radius: 3em;
+}
+.not-found-info button:hover{
+    background: #d15935;
+    color:white;
+}

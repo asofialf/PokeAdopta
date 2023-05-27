@@ -1,0 +1,10 @@
+footer{
+    position: flex;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    color: #4A6163;
+    font-family: 'Lexend';
+}

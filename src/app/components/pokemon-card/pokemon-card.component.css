@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3em;
+  }
+.pokemon-card{
+    flex: 0 0 calc(20% - 2em);
+    margin: 1em;
+    max-width: 30em;
+    display: flex;
+}
+.pokemon-card mat-card-title{
+    font-family:'Lexend';
+}
+.pokemon-card mat-card-subtitle{
+    font-family:'Lexend';
+}
+.pokemon-card mat-card-content{
+    font-family:'Lexend';
+}
+.pokemon-card button{
+    font-family:'Lexend';
+}
+.pokemon-card .favorite:hover{
+    background: #F37B7E;
+    color: white;
+}
+.pokemon-card .add:hover{
+    background: #4B6464;
+    color:white;
+}
