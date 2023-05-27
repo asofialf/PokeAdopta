@@ -10,13 +10,23 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { MaterialModule } from 'src/shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FavoritesComponent } from './pages/favorites/favorites.component';
+import { AdoptedComponent } from './pages/adopted/adopted.component';
+import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
+import { InAdoptionComponent } from './pages/in-adoption/in-adoption.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    FavoritesComponent,
+    AdoptedComponent,
+    PokemonCardComponent,
+    InAdoptionComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

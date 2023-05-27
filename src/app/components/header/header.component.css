@@ -4,6 +4,29 @@ mat-toolbar{
     transition: 0.2s;
     padding: 8px 2%;
     background-color: #F9FAF4;
+    height: 4em;
+}
+.mat-toolbar a{
+    font-family: 'Lexend';
+    font-weight: 700;
+    text-decoration: none;
+    color: #4A6163;
+}
+.mat-toolbar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4em;
+    margin: 1em;
+}
+.mat-toolbar button:hover{
+    background: #4A6163;
+    color:white;
+}
+.mat-toolbar button p {
+    margin: 0; /* Eliminar el margen por defecto del párrafo */
+    font-family: 'Lexend';
+    font-weight: 500;
 }
 .example-spacer {
     flex: 1 1 auto;
