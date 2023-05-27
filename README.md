@@ -1,27 +1,30 @@
 # PokeAdopta
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+PokeAdopta is a web application that allows users to adopt virtual Pokémon companions. It provides a fun and interactive platform for Pokémon enthusiasts to find their perfect virtual companion and take care of them
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Adoption Center:** Browse through a wide variety of Pokémon available for adoption. Each Pokémon comes with its unique characteristics, abilities, and stats.
+- **Search and Filter:** Easily search for Pokémon by name, type, or other attributes. Filter the results to find Pokémon that match specific criteria.
+- **Adoption Process:** Apply for adoption by submitting an application form. Users can provide details about their experience with Pokémon, their lifestyle, and why they would be a suitable Pokémon trainer.
 
-## Code scaffolding
+## Technologies Used
+- **Angular:** Front-end framework for building the user interface and managing the application's state.
+- **Angular Material:** UI component library that provides pre-built and customizable components following the Material Design guidelines.
+- **Pokémon API:** Integration with a third-party Pokémon API to fetch Pokémon data and information.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+Follow these steps to get started with PokeAdopta:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository: **git clone https://github.com/your-username/PokeAdopta.git**
 
-## Running unit tests
+2. Install the dependencies: **npm install**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Start the development server: **ng serve**
 
-## Running end-to-end tests
+4. Open the application in your browser: **http://localhost:4200**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is licensed under the MIT License. See the LICENSE file for more details.
