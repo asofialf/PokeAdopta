@@ -2,11 +2,13 @@
 <mat-card class="pokemon-card col-md-3" *ngFor="let pokemon of pokemons">
     <mat-card-header>
         <mat-card-title>{{pokemon.name}}</mat-card-title>
-        <mat-card-subtitle>Shape</mat-card-subtitle>
+        <mat-card-subtitle>{{pokemon.generation}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image [src]="pokemon.image" alt="Pokemon img">
     <mat-card-content>
-        <p>descripcion</p>
+        <p>
+            {{pokemon.name}} es un pokemon de color {{pokemon.color}}, tiene la forma de un {{pokemon.shape}} y vive en {{pokemon.habitat}}.
+        </p>
     </mat-card-content>
     <mat-card-actions>
         <button mat-button extended class="favorite">
