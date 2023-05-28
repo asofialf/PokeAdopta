@@ -18,7 +18,7 @@
       para su salud y felicidad. Si estás listo para asumir esta responsabilidad, ¡adelante y encuentra a tu nuevo compañero!
     </p>
     <mat-checkbox class="ready" color="primary" [(ngModel)]="checkbox" (change)="onCheckboxChange()">He leído y estoy de acuerdo con la información dada.</mat-checkbox>
-    <button mat-raised-button class="btn-ready" [class]="buttonColor" [disabled]="!checkbox">¡Estoy listo!</button>
+    <button mat-raised-button class="btn-ready" [class]="buttonColor" [disabled]="!checkbox" routerLink="/final-adoption">¡Estoy listo!</button>
   </div>
   </mat-grid-tile>
   <mat-grid-tile class="slide">

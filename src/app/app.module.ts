@@ -17,6 +17,7 @@ import { InAdoptionComponent } from './pages/in-adoption/in-adoption.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AdoptFormComponent } from './pages/adopt-form/adopt-form.component';
 import { FavoritesCardComponent } from './components/favorites-card/favorites-card.component';
+import { FinalAdoptionComponent } from './pages/final-adoption/final-adoption.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FavoritesCardComponent } from './components/favorites-card/favorites-ca
     InAdoptionComponent,
     NotFoundComponent,
     AdoptFormComponent,
-    FavoritesCardComponent
+    FavoritesCardComponent,
+    FinalAdoptionComponent
   ],
   imports: [
     BrowserModule,
