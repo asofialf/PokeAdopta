@@ -2,25 +2,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3em;
+    margin: 0.5em 3em;
   }
 .pokemon-card{
     flex: 0 0 calc(20% - 2em);
     margin: 1em;
-    max-width: 30em;
+    width: 30em;
+    height: 39em;
     display: flex;
 }
 .pokemon-card mat-card-title{
     font-family:'Lexend';
+    text-transform:capitalize;
 }
 .pokemon-card mat-card-subtitle{
     font-family:'Lexend';
+    text-transform:capitalize;
 }
 .pokemon-card mat-card-content{
     font-family:'Lexend';
 }
+.pokemon-card mat-card-actions {
+    margin-top: auto;
+  }
 .pokemon-card button{
     font-family:'Lexend';
+    width: 9em;
+    height: 3em;
 }
 .pokemon-card .favorite:hover{
     background: #F37B7E;

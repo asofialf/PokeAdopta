@@ -1,6 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { PokemonService } from 'src/app/services/pokemon.service';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Pokemon } from 'src/app/models/pokemon';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -9,16 +12,23 @@ import { Router } from '@angular/router';
 })
 export class PokemonCardComponent {
 pokemons: any[]=[];
+favouritePokemons: Pokemon[] = [];
 
-constructor(private pokemonService: PokemonService, private router: Router){}
+constructor(private pokemonService: PokemonService, private router: Router,
+  private _snackBar: MatSnackBar, private http: HttpClient){}
 
 ngOnInit(): void{
   this.getPokemon();
 }
 
+addPokemonToFavourites(pokemon: Pokemon){
+  this.favouritePokemons.push(pokemon);
+  this.pokemonService.addFavorite(this.favouritePokemons);
+}
+
 getPokemon(){
   let pokemonData;
-  for(let i = 1; i <= 10; i++){
+  for(let i = 10; i <= 19; i++){
     this.pokemonService.getPokemon(i).subscribe(
       res=>{
         const pokemon = res[0];
@@ -40,5 +50,11 @@ getPokemon(){
       }
     )
   }
+}
+
+openSnackBar(message:string){
+  this._snackBar.open(message, 'Deshacer',{
+    duration: 2000
+  });
 }
 }

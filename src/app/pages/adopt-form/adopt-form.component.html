@@ -1,0 +1,27 @@
+<mat-grid-list cols="2" rowHeight="58em" class="container">
+  <mat-grid-tile class="slide">
+    <div class="adoption-info">
+    <h1>Antes de adoptar...</h1>
+    <p>
+      Adoptar un Pokémon es una responsabilidad importante y un compromiso a largo plazo.
+      Aquí hay algunas consideraciones que debes tener en cuenta antes de tomar la decisión de adoptar:
+    </p>
+    <ul>
+      <li>Los Pokémon necesitan tiempo, atención y cuidados diarios.</li>
+      <li>Debes estar preparado para cubrir los gastos de alimentación, atención médica y otros cuidados necesarios.</li>
+      <li>Investiga sobre las necesidades específicas de la especie de Pokémon que deseas adoptar.</li>
+      <li>Asegúrate de contar con suficiente espacio y un entorno adecuado para el bienestar del Pokémon.</li>
+      <li>Considera el compromiso a largo plazo, ya que algunos Pokémon pueden vivir muchos años.</li>
+    </ul>
+    <p>
+      Recuerda que adoptar un Pokémon implica brindarle un hogar amoroso y proporcionarle todo lo necesario
+      para su salud y felicidad. Si estás listo para asumir esta responsabilidad, ¡adelante y encuentra a tu nuevo compañero!
+    </p>
+    <mat-checkbox class="ready" color="primary" [(ngModel)]="checkbox" (change)="onCheckboxChange()">He leído y estoy de acuerdo con la información dada.</mat-checkbox>
+    <button mat-raised-button class="btn-ready" [class]="buttonColor" [disabled]="!checkbox">¡Estoy listo!</button>
+  </div>
+  </mat-grid-tile>
+  <mat-grid-tile class="slide">
+  <img src="../../../assets/images/adoption-form.png" alt="pokemon"/>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,53 @@
+.container{
+    overflow: hidden;
+}
+.adoption-info{
+    font-family:'Lexend';
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10em;
+    color: #4A6163;
+}
+.adoption-info h1{
+    font-family:'Lexend';
+    font-size: 2.5em;
+    margin: 1em;
+}
+.adoption-info p{
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+.adoption-info li{
+    font-size: 1.2em;
+    margin: 0.8em;
+}
+.adoption-info .ready{
+    font-family:'Lexend';
+}
+.adoption-info .btn-ready{
+    color:white;
+    margin: 1em;
+}
+.disabled-button {
+    background-color: gray;
+}
+.enabled-button{
+    background: #4A6163;
+}
+  
+@keyframes slide{
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.slide{
+    animation: slide 1s ease-out;
+}

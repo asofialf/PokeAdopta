@@ -7,16 +7,16 @@
     <img mat-card-image [src]="pokemon.image" alt="Pokemon img">
     <mat-card-content>
         <p>
-            {{pokemon.name}} es un pokemon de color {{pokemon.color}}, tiene la forma de un {{pokemon.shape}} y vive en {{pokemon.habitat}}.
+            {{pokemon.name}} es un pokemon color {{pokemon.color}}, tiene la forma de {{pokemon.shape}} y vive en {{pokemon.habitat}}.
         </p>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-button extended class="favorite">
+        <button mat-button extended class="favorite" (click)="openSnackBar('Pokemon agregado a favoritos')" (click)="addPokemonToFavourites(pokemon)">
             <mat-icon>favorite</mat-icon>
             Favoritos
         </button>
-        <button mat-button extended class="add">
-            <mat-icon>add_circle</mat-icon>
+        <button mat-button extended class="add" routerLink="/adopt-form">
+            <mat-icon>add</mat-icon>
             Adoptar
         </button>
     </mat-card-actions>
