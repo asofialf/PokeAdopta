@@ -6,5 +6,4 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['./in-adoption.component.css']
 })
 export class InAdoptionComponent {
-  cardsData: any[] = ['position', 'image', 'name'];
 }

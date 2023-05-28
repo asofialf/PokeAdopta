@@ -1,5 +1,5 @@
 export interface Pokemon{
-    position: string,
+    position: number,
     image: string,
     name: string,
     shape: string,

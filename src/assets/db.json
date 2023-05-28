@@ -1,8 +1,34 @@
 {
-    "favoritos":[
-
-    ],
-    "adoptados":[
-        
-    ]
+  "favoritos": [
+    {
+      "position": 12,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+      "name": "butterfree",
+      "shape": "bug-wings",
+      "color": "white",
+      "generation": "generation-i",
+      "habitat": "forest",
+      "id": 1
+    },
+    {
+      "position": 19,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+      "name": "rattata",
+      "shape": "quadruped",
+      "color": "purple",
+      "generation": "generation-i",
+      "habitat": "grassland",
+      "id": 2
+    },
+    {
+      "position": 11,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "name": "metapod",
+      "shape": "squiggle",
+      "color": "green",
+      "generation": "generation-i",
+      "habitat": "forest",
+      "id": 3
+    }
+  ]
 }

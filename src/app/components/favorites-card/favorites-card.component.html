@@ -1,0 +1,26 @@
+<div class="row">
+    <mat-card class="pokemon-card col-md-3" *ngFor="let pokemon of pokemons">
+        <mat-card-header>
+            <mat-card-title>{{pokemon.name}}</mat-card-title>
+            <mat-card-subtitle>{{pokemon.generation}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="pokemon.image" alt="Pokemon img">
+        <mat-card-content>
+            <p>
+                Color: {{pokemon.color}} <br>
+                Forma: {{pokemon.shape}} <br>
+                Habitat: {{pokemon.habitat}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button extended class="favorite" (click)="deleteFavorite(pokemon.id)" (click)="reloadPage()">
+                <mat-icon>delete_outline</mat-icon>
+                Eliminar
+            </button>
+            <button mat-button extended class="add" routerLink="/adopt-form">
+                <mat-icon>add</mat-icon>
+                Adoptar
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

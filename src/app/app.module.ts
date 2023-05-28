@@ -16,6 +16,7 @@ import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.com
 import { InAdoptionComponent } from './pages/in-adoption/in-adoption.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AdoptFormComponent } from './pages/adopt-form/adopt-form.component';
+import { FavoritesCardComponent } from './components/favorites-card/favorites-card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AdoptFormComponent } from './pages/adopt-form/adopt-form.component';
     PokemonCardComponent,
     InAdoptionComponent,
     NotFoundComponent,
-    AdoptFormComponent
+    AdoptFormComponent,
+    FavoritesCardComponent
   ],
   imports: [
     BrowserModule,

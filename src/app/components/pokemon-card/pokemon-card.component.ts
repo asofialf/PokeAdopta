@@ -15,15 +15,24 @@ pokemons: any[]=[];
 favouritePokemons: Pokemon[] = [];
 
 constructor(private pokemonService: PokemonService, private router: Router,
-  private _snackBar: MatSnackBar, private http: HttpClient){}
+  private _snackBar: MatSnackBar, private http: HttpClient){
+  }
 
 ngOnInit(): void{
   this.getPokemon();
 }
 
 addPokemonToFavourites(pokemon: Pokemon){
-  this.favouritePokemons.push(pokemon);
-  this.pokemonService.addFavorite(this.favouritePokemons);
+  //this.favouritePokemons.push(pokemon);
+  this.pokemonService.addFavorite(pokemon).subscribe(
+    (response: Pokemon) => {
+      this.favouritePokemons.push(response);
+      this.openSnackBar('Pokemon agregado a favoritos');
+    },
+    (error) => {
+      console.log(error);
+    }
+  );
 }
 
 getPokemon(){
@@ -57,4 +66,5 @@ openSnackBar(message:string){
     duration: 2000
   });
 }
+
 }

@@ -48,6 +48,12 @@ export class PokemonService {
     //forkJoin emitirá un solo valor que contiene todos los valores emitidos en el mismo orden en que se pasaron los observables.
   }
 
+  getFavorites(): Observable<Pokemon>{
+    return this.http
+    .get<Pokemon>(this.jsonURL)
+    .pipe(retry(2), catchError(this.handleError));
+  }
+
   addFavorite(data: any):Observable<Pokemon>{
     return this.http
     .post<Pokemon>(this.jsonURL, JSON.stringify(data), this.httpOptions)
